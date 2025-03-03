@@ -1,0 +1,46 @@
+/* normalize.css - Ensures consistent styling across browsers */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* Normalize images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Remove list styles */
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

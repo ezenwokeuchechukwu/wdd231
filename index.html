@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course Home Page">
+    <meta name="author" content="Ezenwoke Uchechukwu Promise">
+    <title>WDD 231 - Course Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/uche.jpg" alt="Your Photo" width="50">
+        <span>Ezenwoke Uchechukwu Promise</span>
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="menu" class="hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/ezenwokeuchechukwu">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>Course Overview</h2>
+            <p>Welcome to the WDD 231 Course Home Page.</p>
+        </section>
+        <section>
+            <h2>Course Information</h2>
+            <div id="course-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ezenwoke Uchechukwu Promise, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
