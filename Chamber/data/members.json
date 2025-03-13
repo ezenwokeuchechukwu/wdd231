@@ -1,0 +1,85 @@
+{
+    "members": [
+      {
+        "name": "Dangote Group",
+        "address": "Union Marble House, 1 Alfred Rewane Road, Ikoyi, Lagos",
+        "phone": "+234 1 448 0815",
+        "website": "https://www.dangote.com",
+        "image": "images/dangote.jpg",
+        "membership": 3
+      },
+      {
+        "name": "GTBank",
+        "address": "Plot 635, Akin Adesola Street, Victoria Island, Lagos",
+        "phone": "+234 700 4826 66328",
+        "website": "https://www.gtbank.com",
+        "image": "images/gtbank.jpg",
+        "membership": 3
+      },
+      {
+        "name": "Flutterwave",
+        "address": "8 Providence Street, Lekki Phase 1, Lagos",
+        "phone": "+234 1 888 9595",
+        "website": "https://www.flutterwave.com",
+        "image": "images/flutterwave.jpg",
+        "membership": 2
+      },
+      {
+        "name": "Interswitch",
+        "address": "1648C Oko Awo Street, Victoria Island, Lagos",
+        "phone": "+234 1 906 5000",
+        "website": "https://www.interswitchgroup.com",
+        "image": "images/interswitch.jpg",
+        "membership": 2
+      },
+      {
+        "name": "Jumia Nigeria",
+        "address": "11th Floor, 109 Adeniyi Jones Avenue, Ikeja, Lagos",
+        "phone": "+234 1 888 1100",
+        "website": "https://www.jumia.com.ng",
+        "image": "images/jumia.jpg",
+        "membership": 2
+      },
+      {
+        "name": "Konga",
+        "address": "Old Western Avenue, Surulere, Lagos",
+        "phone": "+234 1 460 5555",
+        "website": "https://www.konga.com",
+        "image": "images/konga.jpg",
+        "membership": 1
+      },
+      {
+        "name": "Zenith Bank",
+        "address": "Plot 84, Ajose Adeogun Street, Victoria Island, Lagos",
+        "phone": "+234 1 278 7000",
+        "website": "https://www.zenithbank.com",
+        "image": "images/zenithbank.jpg",
+        "membership": 3
+      },
+      {
+        "name": "MTN Nigeria",
+        "address": "MTN Plaza, Falomo Roundabout, Ikoyi, Lagos",
+        "phone": "+234 803 101 2345",
+        "website": "https://www.mtn.ng",
+        "image": "images/mtn.jpg",
+        "membership": 3
+      },
+      {
+        "name": "Access Bank",
+        "address": "Plot 1665, Oyin Jolayemi Street, Victoria Island, Lagos",
+        "phone": "+234 1 271 2005",
+        "website": "https://www.accessbankplc.com",
+        "image": "images/accessbank.jpg",
+        "membership": 2
+      },
+      {
+        "name": "Nestlé Nigeria",
+        "address": "22-24 Industrial Avenue, Ilupeju, Lagos",
+        "phone": "+234 1 279 0707",
+        "website": "https://www.nestle-cwa.com",
+        "image": "images/nestle.jpg",
+        "membership": 3
+      }
+    ]
+  }
+  
