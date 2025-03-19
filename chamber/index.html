@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover business opportunities and connect with companies in Lagos, Nigeria through the Lagos Chamber of Commerce.">
+    <meta name="author" content="Ezenwoke Uchechukwu Promise">
+    <meta name="keywords" content="Lagos, Chamber of Commerce, Business Directory, Nigeria, Companies, Trade">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lagos Chamber of Commerce - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ezenwokeuchechukwu.github.io/wdd231/chamber/images/lagos-chamber.png">
+    <meta property="og:url" content="https://ezenwokeuchechukwu.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Join the Lagos Chamber of Commerce to connect with businesses and access exclusive opportunities in Nigeria.">
+
+    <title>Lagos Chamber of Commerce - Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalise.css">
+
+    <!-- JavaScript -->
+    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Lagos Chamber of Commerce</h1>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <img src="images/lagoshero.jpg" alt="Lagos city skyline at sunset" loading="lazy">
+            <div class="hero-text">
+                <h2>Welcome to the Lagos Chamber of Commerce</h2>
+                <p>Connecting Businesses. Strengthening the Economy.</p>
+                <a href="join.html" class="cta-button">Join Now</a>
+            </div>
+        </section>
+
+        <!-- Current Events -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <article>
+                <h3>Annual Business Expo</h3>
+                <p><strong>Date:</strong> April 25, 2025</p>
+                <p><strong>Location:</strong> Lagos Business Center</p>
+                <p>Join the biggest networking event for businesses in Lagos!</p>
+            </article>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <p><strong>Temperature:</strong> <span id="temp">--</span>°F</p>
+            <p><strong>Condition:</strong> <span id="description">Loading...</span></p>
+            <h3>3-Day Forecast</h3>
+            <ul id="forecast"></ul>
+        </section>
+
+        <!-- Business Spotlight -->
+        <section id="spotlights">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight-container"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ezenwoke Uchechukwu Promise, Nigeria | WDD 231</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Dynamic Year & Last Modified Date
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = document.lastModified;
+
+        // Mobile Navigation Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
