@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Chamber - Membership Application</title>
+    <link rel="stylesheet" href="styles/join.css">
+    <script defer src="scripts/join.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Lagos Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Membership Application</h2>
+            <form method="get" action="thankyou.html">
+                <label>First Name:
+                    <input type="text" name="first_name" required title="Enter your first name" autocomplete="given-name">
+                </label>
+
+                <label>Last Name:
+                    <input type="text" name="last_name" required title="Enter your last name" autocomplete="family-name">
+                </label>
+
+                <label>Organizational Title:
+                    <input type="text" name="organization_title" title="Enter your title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                </label>
+
+                <label>Email Address:
+                    <input type="email" name="email" required title="Enter a valid email" autocomplete="email" placeholder="example@domain.com">
+                </label>
+
+                <label>Mobile Phone:
+                    <input type="tel" name="phone" required title="Enter your mobile number" autocomplete="tel">
+                </label>
+
+                <label>Business/Organization Name:
+                    <input type="text" name="organization" required title="Enter your business name" autocomplete="organization">
+                </label>
+
+                <label>Membership Level:
+                    <select name="membership_level">
+                        <option value="NP">NP Membership (No Fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Business Description:
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Submit Membership Application">
+            </form>
+        </section>
+
+        <!-- Membership Cards -->
+        <section class="membership-cards">
+            <div class="card" onclick="document.getElementById('npModal').showModal()">
+                <h3>NP Membership</h3>
+                <p>No fee required.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card" onclick="document.getElementById('bronzeModal').showModal()">
+                <h3>Bronze Membership</h3>
+                <p>Basic benefits.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card" onclick="document.getElementById('silverModal').showModal()">
+                <h3>Silver Membership</h3>
+                <p>Exclusive discounts.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card" onclick="document.getElementById('goldModal').showModal()">
+                <h3>Gold Membership</h3>
+                <p>Premium access.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+
+        <!-- Membership Modals -->
+        <dialog id="npModal">
+            <h3>NP Membership</h3>
+            <p>No fee required. Non-profit organizations can join for free.</p>
+            <button onclick="this.parentElement.close()">Close</button>
+        </dialog>
+
+        <dialog id="bronzeModal">
+            <h3>Bronze Membership</h3>
+            <p>Basic benefits include networking opportunities.</p>
+            <button onclick="this.parentElement.close()">Close</button>
+        </dialog>
+
+        <dialog id="silverModal">
+            <h3>Silver Membership</h3>
+            <p>Includes discounts on events and training.</p>
+            <button onclick="this.parentElement.close()">Close</button>
+        </dialog>
+
+        <dialog id="goldModal">
+            <h3>Gold Membership</h3>
+            <p>Premium benefits including advertising and priority event access.</p>
+            <button onclick="this.parentElement.close()">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+</body>
+</html>
