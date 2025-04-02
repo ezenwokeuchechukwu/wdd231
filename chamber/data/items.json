@@ -1,0 +1,50 @@
+[
+    {
+        "title": "National Museum Lagos",
+        "image": "images/national museum.jpeg",
+        "address": "Onikan, Lagos Island",
+        "description": "A historical museum showcasing Nigerian artifacts."
+    },
+    {
+        "title": "Lekki Conservation Centre",
+        "image": "images/lekki conservation centre.jpeg",
+        "address": "Lekki Peninsula, Lagos",
+        "description": "A nature reserve with canopy walks and diverse wildlife."
+    },
+    {
+        "title": "Nike Art Gallery",
+        "image": "images/nike art gallery.jpeg",
+        "address": "Lekki, Lagos",
+        "description": "A vibrant gallery featuring African art and textiles."
+    },
+    {
+        "title": "Tarkwa Bay Beach",
+        "image": "images/tarkwa bay beach.jpeg",
+        "address": "Lagos Harbor, Lagos",
+        "description": "A beautiful beach known for water sports and relaxation."
+    },
+    {
+        "title": "Freedom Park Lagos",
+        "image": "images/freedom park lagos.jpeg",
+        "address": "Broad Street, Lagos Island",
+        "description": "A cultural and recreational park built on a former colonial prison."
+    },
+    {
+        "title": "Terra Kulture",
+        "image": "images/terra kulture.jpeg",
+        "address": "Victoria Island, Lagos",
+        "description": "A hub for Nigerian arts, theater performances, and culture."
+    },
+    {
+        "title": "Elegushi Beach",
+        "image": "images/elegushi beach.jpeg",
+        "address": "Lekki, Lagos",
+        "description": "A private beach with lively nightlife, food, and music."
+    },
+    {
+        "title": "Eko Atlantic City",
+        "image": "images/eko atlantic city.jpeg",
+        "address": "Victoria Island, Lagos",
+        "description": "An ambitious urban development project redefining the Lagos coastline."
+    }
+]

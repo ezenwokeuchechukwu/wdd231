@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover attractions and businesses in Lagos, Nigeria.">
+    <meta name="author" content="Ezenwoke Uchechukwu Promise">
+    <meta name="keywords" content="Lagos, Chamber of Commerce, Business Directory, Nigeria, Companies, Trade">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lagos Chamber of Commerce - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ezenwokeuchechukwu.github.io/wdd231/chamber/images/lagos-chamber.png">
+    <meta property="og:url" content="https://ezenwokeuchechukwu.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Join the Lagos Chamber of Commerce to connect with businesses and access exclusive opportunities in Nigeria.">
+
+    <title>Lagos Chamber of Commerce - Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <!-- JavaScript -->
+    <script defer src="scripts/discover.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Lagos Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sidebar for visit message -->
+        <aside id="visit-message"></aside>
+
+        <!-- Grid Container for 8 Items -->
+        <section class="grid-container"></section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ezenwoke Uchechukwu Lagos Chamber of Commerce</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>

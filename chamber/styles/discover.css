@@ -1,0 +1,53 @@
+.grid-container {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Small Screens (Mobile: 1 Column) */
+@media (max-width: 640px) {
+    .grid-container {
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+}
+
+/* Medium Screens (Tablet: 2 Columns) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+}
+
+/* Large Screens (Desktop: 4 Columns) */
+@media (min-width: 1025px) {
+    .grid-container {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+@media (min-width: 641px) {
+    .card img:hover {
+        transform: scale(1.1);
+        filter: brightness(80%);
+    }
+}
