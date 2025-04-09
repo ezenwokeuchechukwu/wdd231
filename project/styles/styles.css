@@ -120,3 +120,106 @@ form button {
 form button:hover {
     background-color: #45a049;
 }
+/* CONTACT FORM STYLING */
+#contact-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #1d72b8;
+  }
+  
+  form button[type="submit"] {
+    display: block;
+    margin: 1.5rem auto 0;
+    padding: 10px 20px;
+    background-color: #1d72b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #155a96;
+  }
+  
+  /* MODAL STYLING */
+  dialog#confirmation-modal {
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    text-align: center;
+  }
+  
+  dialog[open] {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  #confirmation-modal p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #1a7a3d;
+    font-weight: bold;
+  }
+  
+  #close-modal {
+    padding: 8px 16px;
+    background-color: #1d72b8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #close-modal:hover {
+    background-color: #155a96;
+  }
+  

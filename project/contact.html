@@ -7,9 +7,9 @@
     <meta name="author" content="Ezenwoke Uchechukwu Promise">
     <title>Contact - Uchepromax Services Intl</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="script/script.js"></script>
     <link rel="icon" href="images/favicon.ico">
 </head>
+
 <body>
     <header>
         <div class="logo-container">
@@ -27,10 +27,9 @@
     </header>
 
     <main>
-        <section>
+        <section id="contact-section">
             <h1>Contact Us</h1>
-            <p>Have questions or inquiries? Reach out to us using the form below.</p>
-            <form action="form-action.html" method="POST">
+            <form id="contact-form" action="form-action.html" method="POST">
                 <div class="form-group">
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your full name" required>
@@ -49,10 +48,17 @@
                 <button type="submit" class="btn">Send Message</button>
             </form>
         </section>
+
+        <!-- Modal Dialog -->
+        <dialog id="confirmation-modal">
+            <p>Your message has been sent successfully!</p>
+            <button id="close-modal">Close</button>
+        </dialog>
     </main>
 
     <footer>
-        <p>&copy; 2025 Uchepromax Services Intl. All rights reserved.| Ezenwoke Uchechukwu Promise </p><p class="last-modified-date"></p>
+        <p>&copy; 2025 Uchepromax Services Intl. All rights reserved.| Ezenwoke Uchechukwu Promise </p>
+        <p class="last-modified-date"></p>
         <div class="social-links">
             <a href="https://www.facebook.com/profile.php?id=100006787088772&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank">
                 <img src="images/facebook.jpeg" alt="Facebook" />
@@ -67,9 +73,23 @@
                 <img src="images/instagram.jpeg" alt="Instagram" />
             </a>
         </div>
-        
-    </footer> 
-    
+    </footer>
 
+    <script type="module" src="scripts/main.js" defer></script>
+    <script>
+        // Display last modified date
+        document.querySelector('.last-modified-date').textContent = `Last modified: ${document.lastModified}`;
+
+        // Modal close functionality
+        document.getElementById('close-modal').addEventListener('click', () => {
+            document.getElementById('confirmation-modal').close();
+        });
+
+        // Show modal after form submission (simulated)
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.getElementById('confirmation-modal').showModal();
+        });
+    </script>
 </body>
 </html>
