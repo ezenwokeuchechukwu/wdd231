@@ -7,22 +7,21 @@
   <meta name="author" content="Ezenwoke Uchechukwu Promise" />
   <title>Uchepromax Services Intl</title>
 
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="script/script.js" defer></script>
+
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="styles/styles.css" />
-
-  <!-- JavaScript ES Module -->
-  <script type="module" src="script/main.js" defer></script>
 </head>
 <body>
   <header>
     <div class="logo-container">
-      <img src="images/uchepromax.jpg" alt="Uchepromax Services Intl Logo" class="logo" />
+      <img src="images/uchepromax.jpg" alt="Uchepromax Services Intl Logo" class="logo" loading="lazy" />
     </div>
     <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="shop.html">Shop</a></li>
@@ -32,50 +31,50 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class="hero-section">
       <h1>Welcome to Uchepromax Services Intl</h1>
       <p>Your trusted partner for professional services</p>
-      <img src="images/uchepromaxhero.jpg" alt="Uchepromax Services Intl Hero Banner" />
+      <img src="images/uchepromaxhero.jpg" alt="Hero section visual for Uchepromax Services Intl" loading="lazy" />
     </section>
 
-    <!-- About Section -->
-    <section id="about-us">
+    <section id="about-us" class="about-section">
       <h2>About Us</h2>
       <p>
-        Uchepromax Services Intl is a leading provider of quality services, committed to excellence and customer satisfaction. We offer a range of services tailored to meet the unique needs of our clients.
+        Uchepromax Services Intl is a leading provider of quality services, committed to excellence and customer satisfaction. 
+        We offer a range of services tailored to meet the unique needs of our clients.
       </p>
     </section>
 
-    <!-- Wireframes Section -->
-    <section id="wireframe">
+    <section id="wireframe" class="wireframe-section">
       <h2>Wireframe</h2>
-      <p>Below are wireframes for mobile and desktop views:</p>
-      <ul>
-        <li><a href="images/uchepromaxwireframe.png" target="_blank">Mobile Wireframe</a></li>
-        <li><a href="images/uchepromaxwireframedsv.png" target="_blank">Desktop Wireframe</a></li>
-      </ul>
+      <p>Check out the wireframe for the layout of the Uchepromax Services Intl website:</p>
+      <div class="wireframe-container"> <!-- Add a container around the wireframe -->
+        <a href="images/uchepromaxwireframe.png" target="_blank">
+          <img src="images/uchepromaxwireframe.png" alt="Website wireframe of Uchepromax Services Intl" loading="lazy" />
+        </a>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Uchepromax Services Intl. All rights reserved. | Ezenwoke Uchechukwu Promise</p>
-    <p class="last-modified-date"></p>
+    <div class="footer-content">
+      <p>&copy; 2025 Uchepromax Services Intl. All rights reserved. | Ezenwoke Uchechukwu Promise</p>
+      <p class="last-modified-date"></p>
 
-    <div class="social-links">
-      <a href="https://www.facebook.com/profile.php?id=100006787088772&mibextid=wwXIfr" target="_blank">
-        <img src="images/facebook.jpeg" alt="Facebook" />
-      </a>
-      <a href="https://x.com/uchepromaxi?s=21" target="_blank">
-        <img src="images/x.png" alt="Twitter/X" />
-      </a>
-      <a href="https://www.linkedin.com/in/uchechukwu-ezenwoke" target="_blank">
-        <img src="images/linkedin.png" alt="LinkedIn" />
-      </a>
-      <a href="https://www.instagram.com/official_umoneyp" target="_blank">
-        <img src="images/instagram.jpeg" alt="Instagram" />
-      </a>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100006787088772" target="_blank" aria-label="Facebook">
+          <img src="images/facebook.jpeg" alt="Facebook logo" loading="lazy" />
+        </a>
+        <a href="https://x.com/uchepromaxi?s=21" target="_blank" aria-label="Twitter/X">
+          <img src="images/x.png" alt="X (Twitter) logo" loading="lazy" />
+        </a>
+        <a href="https://www.linkedin.com/in/uchechukwu-ezenwoke" target="_blank" aria-label="LinkedIn">
+          <img src="images/linkedin.png" alt="LinkedIn logo" loading="lazy" />
+        </a>
+        <a href="https://www.instagram.com/official_umoneyp" target="_blank" aria-label="Instagram">
+          <img src="images/instagram.jpeg" alt="Instagram logo" loading="lazy" />
+        </a>
+      </div>
     </div>
   </footer>
 </body>
