@@ -95,4 +95,50 @@ document.addEventListener("DOMContentLoaded", () => {
       return true;
     }
   };
+
+  // Modal functionality: Show modal on button click
+  const openModalBtn = document.querySelector('#openModalBtn');
+  openModalBtn?.addEventListener('click', () => {
+    openModal('#myModal');
+  });
+
+  // Close modal
+  const closeModalBtn = document.querySelector('#closeModalBtn');
+  closeModalBtn?.addEventListener('click', () => {
+    closeModal('#myModal');
+  });
+
+  // Modal open
+  const openModal = (modalSelector) => {
+    const modal = document.querySelector(modalSelector);
+    modal.style.display = 'block';
+  };
+
+  // Modal close
+  const closeModal = (modalSelector) => {
+    const modal = document.querySelector(modalSelector);
+    modal.style.display = 'none';
+  };
+
+  // --- Fetching Data Functions ---
+  // Fetch data from a URL and return it
+  const fetchData = async (url) => {
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  // Fetch and display data (e.g., list of services)
+  fetchData('data/services.json').then(data => {
+    const servicesList = document.querySelector('.services-list');
+    data.forEach(service => {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${service.name}: ${service.description}`;
+      servicesList.appendChild(listItem);
+    });
+  });
 });
