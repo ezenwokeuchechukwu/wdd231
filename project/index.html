@@ -41,18 +41,33 @@
       <h2>About Us</h2>
       <p>
         Uchepromax Services Intl is a leading provider of quality services, committed to excellence and customer satisfaction. 
-        We offer a range of services tailored to meet the unique needs of our clients.
+        We offer a range of services tailored to meet the unique needs of our clients, including:
       </p>
+      
+      <h3>Our Services</h3>
+      <ul>
+        <li><strong>Consulting:</strong> Expert advice to help businesses achieve their goals and overcome challenges.</li>
+        <li><strong>Project Management:</strong> We manage your projects from start to finish, ensuring timely and efficient delivery.</li>
+        <li><strong>Technical Support:</strong> Our technical team is here to provide solutions and ensure your operations run smoothly.</li>
+        <li><strong>Training & Development:</strong> We offer workshops and training programs designed to upskill your team.</li>
+      </ul>
     </section>
 
-    <section id="wireframe" class="wireframe-section">
+    <section id="products" class="products-section">
+      <h2>Our Products</h2>
+      <p>Explore our range of high-quality products designed to meet your needs. Below are some of the products we offer:</p>
+      
+      <ul id="product-list" class="product-list">
+        <!-- Products will be dynamically inserted here -->
+      </ul>
+    </section>
+
+    <section id="wireframe">
       <h2>Wireframe</h2>
-      <p>Check out the wireframe for the layout of the Uchepromax Services Intl website:</p>
-      <div class="wireframe-container"> <!-- Add a container around the wireframe -->
-        <a href="images/uchepromaxwireframe.png" target="_blank">
-          <img src="images/uchepromaxwireframe.png" alt="Website wireframe of Uchepromax Services Intl" loading="lazy" />
-        </a>
-      </div>
+      <p>Below are wireframes for mobile and desktop views:</p>
+      <a href="images/uchepromaxwireframe.png" target="_blank">Mobile Wireframe</a>
+      <br>
+      <a href="images/uchepromaxwireframedsv.png" target="_blank">Desktop Wireframe</a>
     </section>
   </main>
 
@@ -77,5 +92,26 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Fetch product data and display it
+    fetch('data/products.json')
+      .then(response => response.json())
+      .then(data => {
+        const productList = document.getElementById('product-list');
+        data.forEach(product => {
+          const productItem = document.createElement('li');
+          productItem.innerHTML = `
+            <h4>${product.name}</h4>
+            <p>${product.description}</p>
+            <p>Price: $${product.price}</p>
+            <p><a href="${product.url}" target="_blank">Visit Product Page</a></p>
+            <img src="${product.image}" alt="${product.name}" loading="lazy" />
+          `;
+          productList.appendChild(productItem);
+        });
+      })
+      .catch(error => console.error('Error loading product data:', error));
+  </script>
 </body>
 </html>

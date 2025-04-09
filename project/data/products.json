@@ -1,0 +1,142 @@
+[
+    {
+      "name": "Consulting Service",
+      "description": "Expert business consulting to help you achieve your goals.",
+      "price": "199.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/consulting.jpeg"
+    },
+    {
+      "name": "Project Management Service",
+      "description": "End-to-end project management for successful outcomes.",
+      "price": "249.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/project.jpeg"
+    },
+    {
+      "name": "Technical Support Service",
+      "description": "Reliable technical support for your business operations.",
+      "price": "149.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/it.jpeg"
+    },
+    {
+      "name": "Training & Development",
+      "description": "Workshops and training programs for team upskilling.",
+      "price": "99.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/it.jpeg"
+    },
+    {
+      "name": "Web Development Service",
+      "description": "Professional web development services tailored to your needs.",
+      "price": "799.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/web.jpeg"
+    },
+    {
+      "name": "SEO Optimization Service",
+      "description": "Improve your online presence with expert SEO services.",
+      "price": "299.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/cloud.jpeg"
+    },
+    {
+      "name": "E-Commerce Solutions",
+      "description": "Build and grow your online store with our e-commerce solutions.",
+      "price": "499.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/ecommerce.jpeg"
+    },
+    {
+      "name": "Mobile App Development",
+      "description": "Custom mobile app development for iOS and Android.",
+      "price": "999.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/it.jpeg"
+    },
+    {
+      "name": "Branding & Identity",
+      "description": "Create a powerful brand identity with our branding services.",
+      "price": "399.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/branding.jpeg"
+    },
+    {
+      "name": "Cloud Computing Solutions",
+      "description": "Scalable cloud solutions to enhance your business productivity.",
+      "price": "499.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/cloud.jpeg"
+    },
+    {
+      "name": "Data Analysis Service",
+      "description": "Unlock the potential of your data with expert analysis.",
+      "price": "249.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/data.jpeg"
+    },
+    {
+      "name": "Market Research Service",
+      "description": "Comprehensive market research to inform your business strategy.",
+      "price": "349.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/market research service.jpeg"
+    },
+    {
+      "name": "Digital Marketing Services",
+      "description": "Reach your audience effectively with our digital marketing strategies.",
+      "price": "449.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/digital.jpeg"
+    },
+    {
+      "name": "IT Infrastructure Setup",
+      "description": "Setup and optimize your IT infrastructure for efficiency.",
+      "price": "599.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "project/images/it.jpeg"
+    },
+    {
+      "name": "Customer Support Solutions",
+      "description": "Enhance your customer experience with tailored support solutions.",
+      "price": "199.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/customer support solutions.png"
+    },
+    {
+      "name": "Graphic Design Service",
+      "description": "Creative graphic design services for your marketing materials.",
+      "price": "159.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/graphic design service.jpeg"
+    },
+    {
+      "name": "Business Process Automation",
+      "description": "Automate your business processes to increase efficiency.",
+      "price": "799.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/business process automation.jpeg"
+    },
+    {
+      "name": "Website Maintenance Service",
+      "description": "Regular maintenance to keep your website up-to-date and secure.",
+      "price": "99.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/website maintenance service.jpeg"
+    },
+    {
+      "name": "Photography Services",
+      "description": "Professional photography services for your business events and more.",
+      "price": "349.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/photography services.jpeg"
+    },
+    {
+      "name": "Video Production Service",
+      "description": "High-quality video production for advertising and branding.",
+      "price": "899.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/video production service.webp"
+    }
+]

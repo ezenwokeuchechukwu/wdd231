@@ -120,8 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.style.display = 'none';
   };
 
-  // --- Fetching Data Functions ---
-  // Fetch data from a URL and return it
+  // Fetching Data Functions --- Fetch data from a URL and return it
   const fetchData = async (url) => {
     try {
       const response = await fetch(url);
@@ -132,13 +131,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Fetch and display data (e.g., list of services)
-  fetchData('data/services.json').then(data => {
-    const servicesList = document.querySelector('.services-list');
-    data.forEach(service => {
-      const listItem = document.createElement('li');
-      listItem.textContent = `${service.name}: ${service.description}`;
-      servicesList.appendChild(listItem);
-    });
+  // Displaying the Services
+  const services = [
+    {
+      "name": "Consulting Service",
+      "description": "Expert business consulting to help you achieve your goals.",
+      "price": "199.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/consulting.jpeg"
+    },
+    {
+      "name": "Project Management Service",
+      "description": "End-to-end project management for successful outcomes.",
+      "price": "249.99",
+      "url": "https://www.linkedin.com/in/uchechukwu-ezenwoke?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "Image": "images/project.jpeg"
+    },
+    // Add other services here...
+  ];
+
+  const serviceList = document.getElementById("service-list");
+
+  services.forEach(service => {
+    const serviceItem = document.createElement("li");
+    serviceItem.innerHTML = `
+      <h3>${service.name}</h3>
+      <img src="${service.Image}" alt="${service.name}" loading="lazy" width="300">
+      <p>${service.description}</p>
+      <p>Price: $${service.price}</p>
+      <a href="${service.url}" target="_blank">Learn more</a>
+    `;
+    serviceList.appendChild(serviceItem);
   });
+
 });

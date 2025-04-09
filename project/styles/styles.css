@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--light-bg);
+  color: var(--dark-color);
 }
 
 header {
@@ -112,6 +113,7 @@ nav ul li a:hover {
   text-align: center;
   padding: 0 1rem;
 }
+
 .wireframe-container {
   text-align: center; /* Center the image */
   max-width: 100%;     /* Ensure the image fits within the container */
@@ -122,7 +124,6 @@ nav ul li a:hover {
   width: 100%;  /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
 }
-
 
 /* Footer */
 footer {
@@ -200,9 +201,25 @@ form button {
 form button:hover {
   background-color: #45a049;
 }
+
 .last-modified-date {
   font-size: 0.85rem;
   opacity: 0.7;
   margin-top: 0.5rem;
 }
+.product-list {
+  list-style-type: none;
+  padding: 0;
+}
 
+.product-list li {
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.product-list img {
+  max-width: 100%;
+  height: auto;
+}
