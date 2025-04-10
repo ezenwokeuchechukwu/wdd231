@@ -223,3 +223,23 @@ form button:hover {
   max-width: 100%;
   height: auto;
 }
+#service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+#service-list li {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#service-list img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}

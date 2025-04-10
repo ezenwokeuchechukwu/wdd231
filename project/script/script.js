@@ -151,7 +151,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const serviceList = document.getElementById("service-list");
-
   services.forEach(service => {
     const serviceItem = document.createElement("li");
     serviceItem.innerHTML = `
